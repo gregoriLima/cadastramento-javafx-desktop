@@ -11,13 +11,13 @@
 ## Login screen
 ![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/login-screen.png)
 
-## Login screen
+## Main screen
 ![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/main-screen.png)
 
-## Login screen
+## List screen
 ![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/list-screen.png)
 
-## Login screen
+## Consult screen
 ![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/consult-screen.png)
 
 - Grégori Fernandes de Lima
