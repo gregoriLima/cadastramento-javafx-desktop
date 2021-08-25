@@ -6,7 +6,16 @@
 
    double click in: cadastramento.jar
 
-![](https://raw.githubusercontent.com/gregoriLima/cadastramento-spring-boot-api/main/src/main/resources/static/swagger.png)
+## Login screen
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/login-screen.png)
 
+## Login screen
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/main-screen.png)
+
+## Login screen
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/list-screen.png)
+
+## Login screen
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/consult-screen.png)
 
 - Grégori Fernandes de Lima
