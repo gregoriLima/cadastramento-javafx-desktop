@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="770.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MainController">
+   <top>
+      <Pane prefHeight="84.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/topo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="281.0" layoutY="24.0" text="CADASTRAMENTO" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="612.0" layoutY="4.0" text="Candidato: Grégori Lima" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane fx:id="pnlServerStatus" prefHeight="28.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="statusLabel" layoutX="14.0" layoutY="4.0" text="Conectado ao servidor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="status-bar" />
+            <String fx:value="status-bar-connected" />
+         </styleClass>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e8e8df;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="incluirButton" layoutX="53.0" layoutY="75.0" mnemonicParsing="false" onAction="#incluirButtonOnAction" prefHeight="52.0" prefWidth="133.0" text="INCLUIR">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-search" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="alterarButton" layoutX="319.0" layoutY="75.0" mnemonicParsing="false" onAction="#alterarButtonOnAction" prefHeight="52.0" prefWidth="133.0" text="ALTERAR">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-search" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="excluirButton" layoutX="585.0" layoutY="75.0" mnemonicParsing="false" onAction="#excluirButtonOnAction" prefHeight="52.0" prefWidth="133.0" text="EXCLUIR">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-search" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="consultarButton" layoutX="186.0" layoutY="198.0" mnemonicParsing="false" onAction="#consultarButtonOnAction" prefHeight="52.0" prefWidth="133.0" text="CONSULTAR">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-search" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="listarButton" layoutX="452.0" layoutY="198.0" mnemonicParsing="false" onAction="#listarButtonOnAction" prefHeight="52.0" prefWidth="133.0" text="LISTAR">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-search" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="sairButton" layoutX="319.0" layoutY="329.0" mnemonicParsing="false" onAction="#sairButtonOnAction" prefHeight="26.0" prefWidth="133.0" text="SAIR">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-remove" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="770.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ListController">
+   <top>
+      <Pane prefHeight="84.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../resources/images/topo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="347.0" layoutY="24.0" text="LISTAR" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="612.0" layoutY="4.0" text="Candidato: Grégori Lima" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane fx:id="pnlServerStatus" prefHeight="28.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="statusLabel" layoutX="14.0" layoutY="4.0" text="Conectado ao servidor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="status-bar" />
+            <String fx:value="status-bar-connected" />
+         </styleClass>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e8e8df;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="voltarButton" layoutX="192.0" layoutY="336.0" mnemonicParsing="false" onAction="#voltarButtonOnAction" prefHeight="26.0" prefWidth="133.0" text="Voltar">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-back" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="listarButton" layoutX="445.0" layoutY="337.0" mnemonicParsing="false" onAction="#listarButtonOnAction" prefHeight="26.0" prefWidth="133.0" text="Listar">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-new" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Pane prefHeight="70.0" prefWidth="770.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <TextField fx:id="nomeFilterTextField" layoutX="81.0" layoutY="14.0" prefHeight="30.0" prefWidth="244.0" styleClass="txt-input" stylesheets="@../style.css" />
+                  <Button fx:id="buscarButton" layoutX="599.0" layoutY="6.0" mnemonicParsing="false" onAction="#buscarButtonOnAction" prefHeight="30.0" prefWidth="133.0" text="Buscar">
+                     <styleClass>
+                        <String fx:value="btn" />
+                        <String fx:value="btn-search" />
+                     </styleClass>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="cpfFilterTextField" layoutX="386.0" layoutY="14.0" prefHeight="30.0" prefWidth="169.0" styleClass="txt-input" stylesheets="@../style.css" />
+                  <Text layoutX="350.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="27.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Pane fx:id="pnlStatus" layoutY="53.0" prefHeight="24.0" prefWidth="770.0" styleClass="note" stylesheets="@../style.css">
+                     <children>
+                        <Label fx:id="incluirStatusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" prefHeight="20.0" prefWidth="764.0" text="Pessoa incluída com sucesso">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <TableView fx:id="pessoasFisicaTable" layoutY="73.0" prefHeight="257.0" prefWidth="770.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="nome" prefWidth="276.0" text="NOME" />
+                  <TableColumn fx:id="cpf" prefWidth="167.0" text="CPF" />
+                  <TableColumn fx:id="cidade" prefWidth="181.0" text="CIDADE" />
+                  <TableColumn fx:id="estado" prefWidth="69.0" text="ESTADO" />
+              </columns>
+            </TableView>
+            <Label layoutX="7.0" layoutY="335.0" prefHeight="17.0" prefWidth="58.0" text="Registros:" />
+            <Label fx:id="numRegistrosLabel" layoutX="63.0" layoutY="336.0" text="0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
