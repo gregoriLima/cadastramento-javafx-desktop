@@ -6,7 +6,7 @@
 
   - double click in: 
 
-	cadastramento.jar
+		cadastramento.jar
 
 ## Login screen
 ![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/resources/images/login-screen.png)
