@@ -11,15 +11,15 @@
 		
 
 ## Login screen
-![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/tree/main/src/main/resources/com/cadastramento/images/login-screen.png)
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/main/resources/com/cadastramento/images/login-screen.png)
 
 ## Main screen
-![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/tree/main/src/main/resources/com/cadastramento/images/main-screen.png)
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/main/resources/com/cadastramento/images/main-screen.png)
 
 ## List screen
-![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/tree/main/src/main/resources/com/cadastramento/images/list-screen.png)
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/main/resources/com/cadastramento/images/list-screen.png)
 
 ## Consult screen
-![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/tree/main/src/main/resources/com/cadastramento/images/consult-screen.png)
+![](https://raw.githubusercontent.com/gregoriLima/cadastramento-javafx-desktop/main/src/main/resources/com/cadastramento/images/consult-screen.png)
 
 - Grégori Fernandes de Lima
