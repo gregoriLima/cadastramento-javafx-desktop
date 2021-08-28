@@ -212,13 +212,14 @@ public class RESTClient {
 
             if (response.isSuccessful()) {
 
-                pfResult = new Gson().fromJson(response.body().string(), new TypeToken<ArrayList<PessoaFisica>>() {
-                }.getType());
+                pfResult = new ArrayList<PessoaFisica>();
 
-                if(pfResult.isEmpty()) resultMessage = "Nenhum registro encontrado";
+                PessoaFisica result = new Gson().fromJson(response.body().string(), PessoaFisica.class);
+
+                pfResult.add(result);
 
             } else if (response.code() == 404)
-                resultMessage = "404 not found.";
+                resultMessage = "Nenhum registro encontrado";
             else {
                 Map responseMap = new Gson().fromJson(response.body().string(), Map.class);
                 String message = ((String) responseMap.get("message"));
@@ -230,6 +231,7 @@ public class RESTClient {
         } catch (Exception e) {
             System.out.println("Método buscarPorCPF(). Falha no request " + e.getMessage());
             resultMessage = "Erro ao realizar a consulta. Verifique a conexão.";
+            e.printStackTrace();
         }
 
         if (pfResult == null || pfResult.isEmpty())
