@@ -19,6 +19,8 @@ import javafx.event.ActionEvent;
 
 import javafx.scene.layout.Pane;
 
+import java.util.ArrayList;
+
 public class ExcludeController {
 
 	@FXML
@@ -74,7 +76,9 @@ public class ExcludeController {
 			pf = RESTClient.buscarPorCPF(cpfSearchTextField.getText());
 		}
 
-		if (pf instanceof PessoaFisica) {
+		if (pf instanceof ArrayList) {
+
+			pf = ((ArrayList)pf).get(0);
 
 			nomeTextField.setText(((PessoaFisica) pf).getNome());
 			cpfTextField.setText(((PessoaFisica) pf).getCpf());

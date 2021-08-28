@@ -19,6 +19,8 @@ import javafx.scene.layout.Pane;
 
 import javafx.scene.control.Label;
 
+import java.util.ArrayList;
+
 public class ConsultController {
 
 	@FXML
@@ -67,7 +69,9 @@ public class ConsultController {
 			pf = RESTClient.buscarPorCPF(cpfSearchTextField.getText());
 		}
 
-		if (pf instanceof PessoaFisica) {
+		if (pf instanceof ArrayList) {
+
+			pf = ((ArrayList)pf).get(0);
 
 			nomeTextField.setText(((PessoaFisica) pf).getNome());
 			cpfTextField.setText(((PessoaFisica) pf).getCpf());

@@ -212,7 +212,8 @@ public class RESTClient {
 
             if (response.isSuccessful()) {
 
-                pfResult = new Gson().fromJson(response.body().string(), ArrayList.class);
+                pfResult = new Gson().fromJson(response.body().string(), new TypeToken<ArrayList<PessoaFisica>>() {
+                }.getType());
 
             } else if (response.code() == 404)
                 resultMessage = "404 not found.";
