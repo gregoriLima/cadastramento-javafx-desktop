@@ -67,9 +67,12 @@ public class ConsultController {
 
 		if (FormUtil.isValid(cpfSearchTextField)) {
 			pf = RESTClient.buscarPorCPF(cpfSearchTextField.getText());
+		} else {
+			FormUtil.changeStatus(pnlStatus, "advrt");
+			incluirStatusLabel.setText("Preencha corretamente o campo.");
 		}
 
-		if (pf instanceof ArrayList) {
+		if (pf instanceof ArrayList && !((ArrayList) pf).isEmpty()) {
 
 			pf = ((ArrayList)pf).get(0);
 

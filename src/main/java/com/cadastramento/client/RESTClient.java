@@ -215,6 +215,8 @@ public class RESTClient {
                 pfResult = new Gson().fromJson(response.body().string(), new TypeToken<ArrayList<PessoaFisica>>() {
                 }.getType());
 
+                if(pfResult.isEmpty()) resultMessage = "Nenhum registro encontrado";
+
             } else if (response.code() == 404)
                 resultMessage = "404 not found.";
             else {
@@ -230,7 +232,7 @@ public class RESTClient {
             resultMessage = "Erro ao realizar a consulta. Verifique a conexão.";
         }
 
-        if (pfResult == null)
+        if (pfResult == null || pfResult.isEmpty())
             return (Type) resultMessage;
 
         return (Type) pfResult;
@@ -251,6 +253,8 @@ public class RESTClient {
                 pfResult = new Gson().fromJson(response.body().string(), new TypeToken<ArrayList<PessoaFisica>>() {
                 }.getType());
 
+                if(pfResult.isEmpty()) resultMessage = "Nenhum registro encontrado";
+
             } else if (response.code() == 404)
                 resultMessage = "404 not found.";
             else {
@@ -267,7 +271,7 @@ public class RESTClient {
             resultMessage = "Erro ao realizar a consulta. Verifique a conexão.";
         }
 
-        if (pfResult == null)
+        if (pfResult == null  || pfResult.isEmpty())
             return (Type) resultMessage;
 
         return (Type) pfResult;

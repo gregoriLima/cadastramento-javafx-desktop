@@ -74,9 +74,12 @@ public class ExcludeController {
 
 		if (FormUtil.isValid(cpfSearchTextField)) {
 			pf = RESTClient.buscarPorCPF(cpfSearchTextField.getText());
+		} else {
+			FormUtil.changeStatus(pnlStatus, "advrt");
+			incluirStatusLabel.setText("Preencha corretamente o campo.");
 		}
 
-		if (pf instanceof ArrayList) {
+		if (pf instanceof ArrayList && !((ArrayList) pf).isEmpty()) {
 
 			pf = ((ArrayList)pf).get(0);
 
@@ -85,7 +88,7 @@ public class ExcludeController {
 			cidadeTextField.setText(((PessoaFisica) pf).getCidade());
 			estadoTextField.setText(((PessoaFisica) pf).getEstado());
 
-		} else if (pf != null) {
+		} else if (pf != null ) {
 			FormUtil.changeStatus(pnlStatus, "error");
 			incluirStatusLabel.setText(pf.toString());
 		}
