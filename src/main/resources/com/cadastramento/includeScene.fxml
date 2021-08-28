@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="770.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cadastramento.controller.IncludeController">
+   <top>
+      <Pane prefHeight="84.0" prefWidth="770.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="84.0" fitWidth="770.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/topo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="325.0" layoutY="24.0" text="INCLUIR" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="612.0" layoutY="4.0" text="Candidato: Grégori Lima" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <bottom>
+      <Pane fx:id="pnlServerStatus" prefHeight="28.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="statusLabel" layoutX="14.0" layoutY="4.0" text="Conectado ao servidor">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+         <styleClass>
+            <String fx:value="status-bar" />
+            <String fx:value="status-bar-connected" />
+         </styleClass>
+      </Pane>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e8e8df;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="voltarButton" layoutX="190.0" layoutY="334.0" mnemonicParsing="false" onAction="#voltarButtonOnAction" prefHeight="26.0" prefWidth="133.0" text="Voltar">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-back" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="salvarButton" layoutX="459.0" layoutY="334.0" mnemonicParsing="false" onAction="#salvarButtonOnAction" prefHeight="26.0" prefWidth="133.0" text="Salvar">
+               <styleClass>
+                  <String fx:value="btn" />
+                  <String fx:value="btn-new" />
+               </styleClass>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Pane fx:id="pnlStatus" prefHeight="41.0" prefWidth="770.0" styleClass="note" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="incluirStatusLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="11.0" prefHeight="20.0" prefWidth="764.0" text="Pessoa incluída com sucesso">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <TextField fx:id="nomeTextField" layoutX="190.0" layoutY="89.0" onKeyReleased="#nomeTextFieldOnKeyReleased" prefHeight="30.0" prefWidth="420.0" promptText="Digite o nome . . ." styleClass="txt-input" stylesheets="@style.css" />
+            <Text layoutX="120.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="cpfTextField" layoutX="190.0" layoutY="142.0" prefHeight="30.0" prefWidth="420.0" promptText="Digite o CPF . . ." styleClass="txt-input" stylesheets="@style.css" />
+            <Text layoutX="120.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CPF:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="cidadeTextField" layoutX="190.0" layoutY="195.0" prefHeight="30.0" prefWidth="420.0" promptText="Digite a cidade . . ." styleClass="txt-input" stylesheets="@style.css" />
+            <Text layoutX="120.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIDADE:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="120.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESTADO:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="estadoChoiceBox" layoutX="190.0" layoutY="250.0" prefWidth="150.0" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="annotations-13.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/annotations-13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/gson-2.8.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/javafx.web.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/kotlin-stdlib-1.4.10.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/okhttp-4.9.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/okio-2.8.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/slf4j-api-1.7.26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/spring-beans-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/spring-core-5.3.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/spring-data-commons-2.5.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../../../../Program Files/Java/javafx-sdk-16/lib/spring-jcl-5.3.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

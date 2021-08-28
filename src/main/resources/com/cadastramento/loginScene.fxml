@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cadastramento.controller.LoginController">
+   <left>
+      <AnchorPane prefHeight="420.0" prefWidth="252.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="490.0" fitWidth="350.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/fundo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="420.0" prefWidth="430.0" style="-fx-background-color: #e8e8df;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="61.0" layoutY="175.0" text="Email:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField id="userTextField" fx:id="userNameField" layoutX="116.0" layoutY="171.0" prefHeight="28.0" prefWidth="238.0" promptText="email" styleClass="text-input" stylesheets="@style.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="61.0" layoutY="240.0" text="Senha:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField id="passwordField" fx:id="userPasswordField" layoutX="116.0" layoutY="236.0" prefHeight="28.0" prefWidth="238.0" promptText="senha" stylesheets="@style.css">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="loginButton" layoutX="63.0" layoutY="319.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="28.0" prefWidth="294.0" styleClass="btn-login" stylesheets="@style.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="63.0" layoutY="376.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="28.0" prefWidth="294.0" styleClass="btn-login" stylesheets="@style.css" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="loginMessageLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="280.0" prefHeight="20.0" prefWidth="415.0" textFill="#f22222">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="106.0" fitWidth="71.0" layoutX="175.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/lock.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="pnlServerStatus" layoutY="462.2" prefHeight="27.0" prefWidth="430.0" stylesheets="@style.css" AnchorPane.bottomAnchor="1.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label fx:id="statusLabel" layoutX="14.0" layoutY="4.0" text="Conectando ao servidor . . .">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <styleClass>
+                  <String fx:value="status-bar" />
+                  <String fx:value="status-bar-connecting" />
+               </styleClass>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
