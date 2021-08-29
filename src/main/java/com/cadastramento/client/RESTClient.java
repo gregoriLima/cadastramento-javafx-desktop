@@ -44,7 +44,7 @@ public class RESTClient {
                 pfResult = new Gson().fromJson(response.body().string(), PessoaFisica.class);
 
             } else if (response.code() == 404)
-                resultMessage = "404 not found.";
+                resultMessage = "Nenhum registro encontrado.";
             else {
 //                System.out.println(response.body().string());
                 Map responseMap = new Gson().fromJson(response.body().string(), Map.class);
@@ -85,7 +85,7 @@ public class RESTClient {
                 pfResult = new Gson().fromJson(response.body().string(), PessoaFisica.class);
 
             } else if (response.code() == 404)
-                resultMessage = "404 not found.";
+                resultMessage = "Nenhum registro encontrado.";
             else {
 
                 Map responseMap = new Gson().fromJson(response.body().string(), Map.class);
@@ -255,10 +255,10 @@ public class RESTClient {
                 pfResult = new Gson().fromJson(response.body().string(), new TypeToken<ArrayList<PessoaFisica>>() {
                 }.getType());
 
-                if(pfResult.isEmpty()) resultMessage = "Nenhum registro encontrado";
+                if(pfResult.isEmpty()) resultMessage = "Nenhum registro encontrado.";
 
             } else if (response.code() == 404)
-                resultMessage = "404 not found.";
+                resultMessage = "Nenhum registro encontrado.";
             else {
                 Map responseMap = new Gson().fromJson(response.body().string(), Map.class);
                 String message = ((String) responseMap.get("message"));
