@@ -5,7 +5,7 @@
 
 ## Run the app in windows plataform
 
-  - double click in: 
+  - download and double click in: 
 
 		cadastramento.jar
 		
